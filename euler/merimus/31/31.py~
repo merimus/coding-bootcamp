@@ -1,0 +1,10 @@
+
+coins = [200, 100, 50, 20, 10, 5, 2, 1]
+
+def change(value, coin):
+    possible = value / coins[coin]
+    for i in range(0, possible+1):
+        change(value - coins[coin]*i, coin+1)
+    print possible
+
+change(2, 6)

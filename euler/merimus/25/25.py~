@@ -1,0 +1,14 @@
+
+
+n1 = 1
+n2 = 1
+index = 2
+
+# 1 1 2 3 5 8
+def nextFib():
+    index += 1
+    # the IndexTh fib number is.
+    fib = n1 + n2
+    n2 = n1
+    n1 = fib
+

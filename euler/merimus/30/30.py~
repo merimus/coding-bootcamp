@@ -1,0 +1,9 @@
+
+def sumfifthpowers(num):
+    tmp = num
+    sum = 0
+    while tmp > 0:
+        digit = tmp % 10
+        tmp /= 10
+        sum += digit**5
+    return sum

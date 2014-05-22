@@ -1,0 +1,5 @@
+
+def divisors(n):
+    # return list (numbers less than n which divide evenly into n)
+    return [i for i in range(n-1) if n % i == 0]
+
