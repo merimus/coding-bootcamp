@@ -1,7 +1,0 @@
-
-
-
-
-
-for word in open("readme.txt"):
-    print word

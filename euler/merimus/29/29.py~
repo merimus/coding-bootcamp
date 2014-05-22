@@ -1,6 +1,0 @@
-
-values = set()
-for a in range(2, 6):
-    for b in range(2, 6):
-        values.add(a**b)
-print sorted(values)
