@@ -44,3 +44,17 @@ def rwh_primes(n):
         if sieve[i]:
             sieve[i*i::2*i]=[False]*((n-i*i-1)/(2*i)+1)
     return [2] + [i for i in xrange(3,n,2) if sieve[i]]
+
+def nthTriangular(n):
+    return n * (n + 1) / 2
+
+def isTriangular(n):
+    x = 0.5 * (1 + math.sqrt(8*n + 1))
+    return x == int(x)
+
+def isPentagonal(n):
+    x = 1/6.0 * (-1 - math.sqrt(24 * n + 1))
+    return x == int(x)
+def isHexagonal(n):
+    x = 1/4.0 * (-1 - math.sqrt(8 * n + 1))
+    return x == int(x)
